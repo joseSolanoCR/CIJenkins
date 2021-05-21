@@ -28,6 +28,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+
 /**
  * @author sotobotero This set of test allow check the behavior of the web layer
  * application listening like as it would do in production, sending and http
@@ -69,7 +70,7 @@ public class BasicApplicationTests {
     /**
      * Test call of create method, on weblayer.
      */
-    @Test
+    @Test 
     public void testCreate() throws Exception {
         Base64.Encoder encoder = Base64.getEncoder();
         String encoding = encoder.encodeToString((USER + ":" + PASSWORD).getBytes());
